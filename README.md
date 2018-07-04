@@ -40,7 +40,7 @@ if err := checker.Check(plainTextPasswordAttempt); err == password.ErrIncorrect 
 ```
 
 
-# Generating
+## Generating
 
 Generating password hashes and salts is easy:
 
@@ -54,7 +54,7 @@ someUserSalt := pass.Salt // the randomly generated salt
 ```
 
 
-# More
+## More
 
 There's more! Like the Hash struct below. This exposes the ability to change the hash algorithm used (default is `crypto/sha256`) as well as new salt generation length (in bytes).
 
